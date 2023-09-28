@@ -11,10 +11,6 @@
   --button-color: #dffeff;
 }
 
-title {
-    text-transform: uppercase;
-}
-
 body {
   background: var(--background-color);
 }
