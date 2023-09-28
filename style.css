@@ -12,13 +12,20 @@
 }
 
 body {
+  background: var(--background-color);
+}
+
+section {
   display: flex;
   align-items: center;
   justify-content: center;
   height: 100vh;
-  background: var(--background-color);
 }
 
+.header {
+  display: flex;
+  justify-content: center;
+}
 .container {
   position: relative;
   width: 400px;
@@ -152,38 +159,39 @@ body {
 }
 
 .not-found {
-    width: 100%;
-    text-align: center;
-    margin-top: 50px;
-    scale: 0;
-    opacity: 0;
-    display: none;
+  width: 100%;
+  text-align: center;
+  margin-top: 50px;
+  scale: 0;
+  opacity: 0;
+  display: none;
 }
 
 .not-found img {
-    width: 70%;
+  width: 70%;
 }
 
 .not-found p {
-    color: var(--background-color);
-    font-size: 22px;
-    font-weight: 500;
-    margin-top: 12px;
+  color: var(--background-color);
+  font-size: 22px;
+  font-weight: 500;
+  margin-top: 12px;
 }
 
-.weather-box, .weather-details {
-    scale: 0;
-    opacity: 0;
+.weather-box,
+.weather-details {
+  scale: 0;
+  opacity: 0;
 }
 
 .fadeIn {
-    animation: 0.5 fadeIn forwards;
-    animation-delay: 0.5s;
+  animation: 0.5 fadeIn forwards;
+  animation-delay: 0.5s;
 }
 
 @keyframes fadeIn {
-    to{
-        scale: 1;
-        opacity: 1;
-    }
+  to {
+    scale: 1;
+    opacity: 1;
+  }
 }
