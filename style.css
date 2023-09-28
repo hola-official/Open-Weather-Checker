@@ -22,10 +22,6 @@ section {
   height: 100vh;
 }
 
-.header {
-  display: flex;
-  justify-content: center;
-}
 .container {
   position: relative;
   width: 400px;
